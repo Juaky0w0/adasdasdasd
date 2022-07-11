@@ -1,0 +1,226 @@
+/*numbers*/
+.container-numero {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contador {
+    position: absolute;
+    width: 56%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    overflow: hidden;
+    box-sizing: content-box;
+    font-family: Montserrat;
+}
+
+.box-button-activate {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.boton-personalizado-activate {
+    display: none;
+}
+
+.box {
+    margin: 0 30px 0 0;
+}
+
+.box h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.375rem;
+}
+
+.box p {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+.signo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.box .signo p {
+    font-size: 2.375rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 3px 2px 0 0;
+    font-family: Montserrat;
+}
+
+.boton-personalizado-conocenos {
+    height: 40px;
+    width: 214px;
+    border-radius: 35px;
+    margin-top: 25px;
+    font-family: Montserrat;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+a .boton-personalizado-conocenos {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.boton-personalizado-conocenos:hover {
+    background-color: #ece6e6;
+    transition: all .3s ease-in-out;
+}
+
+
+
+/*media*/
+@media screen and (max-width: 1400px) {
+    .contador {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .contador {
+        top: 80%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .contador {
+        width: 90%;
+    }
+
+    .box .signo p {
+        font-size: 2rem;
+    }
+
+    .box h3 {
+
+        font-size: 2rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;
+    }
+}
+
+/*objet-fit*/
+@media screen and (max-width: 900px) {
+
+    .container-numero>img {
+        height: 500px;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:692px) {
+
+    .container-numero>img {
+        height: 600px;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .boton-personalizado-conocenos {
+        display: none;
+    }
+
+    .box-button-activate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton-personalizado-activate {
+        display: block;
+        height: 40px;
+        border-radius: 35px;
+        width: 284px;
+        border: none;
+        font-family: Montserrat;
+        transition: all .3s ease-in-out;
+    }
+
+    a .boton-personalizado-activate {
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .boton-personalizado-activate:hover {
+        background-color: #ece6e6;
+        transition: all .3s ease-in-out;
+    }
+
+    .box-button-activate {
+        top: 85%;
+    }
+
+    .contador {
+        width: 85%;
+        top: 70%;
+    }
+
+    .box {
+        margin: 0 8px 0 0;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .contador {
+        width: 95%;
+        top: 72%;
+
+    }
+
+    .box-button-activate {
+        top: 90%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .box p {
+        font-size: 0.7rem;
+        line-height: 10px;
+    }
+
+    .box h3 {
+        font-size: 1.5rem;
+    }
+
+    .box .signo p {
+        font-size: 1.5rem;
+        padding: 6px 2px 0 0;
+    }
+
+    .contador {
+        top: 75%;
+    }
+
+    .box-button-activate {
+        top: 89%;
+    }
+
+    a .boton-personalizado-activate {
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+}
